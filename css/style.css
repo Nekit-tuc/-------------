@@ -202,7 +202,7 @@ body {
   top: 0;
   left: 0;
   background-color: black;
-  opacity: 0.2;
+  opacity: 0.5;
   content: '';
 }
 
@@ -232,7 +232,7 @@ h1 {
   margin: 0px -10px;
 }
 
-.info__block {
+.block {
 
   width: 33.33%;
   padding: 0px 10px;
@@ -268,3 +268,131 @@ h1 {
 }
 
 /*end info*/
+
+/*star our services*/
+
+.services {
+  padding-bottom: 10px;
+}
+
+.services__item {
+  font-weight: 700;
+  font-size: 30px;
+  letter-spacing: 0.15em;
+}
+
+.services__link {
+  margin-bottom: 90px;
+
+}
+
+.services__linked {
+  display: inline-flex;
+  font-weight: 400;
+  color: #000;
+  position: relative;
+
+}
+
+.services__linked:after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: all 0.2s;
+}
+
+.services__linked:hover::after {
+  opacity: 0;
+}
+
+
+
+
+
+
+
+
+
+.services__block {
+  display: flex;
+  margin: 0 -10px;
+}
+
+.blocks {
+  display: block;
+  position: relative;
+  height: 500px;
+}
+
+.block:hover .blocks__content {
+  opacity: 1;
+}
+
+.block:hover .blocks:after {
+  opacity: .7;
+}
+
+.blocks:after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0;
+  content: '';
+  top: 0;
+  left: 0;
+}
+
+.blocks__content {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  opacity: 0;
+  z-index: 2;
+  transition: all .2s;
+}
+
+.blocks__img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  background-color: #DB2512;
+  content: '';
+  z-index: 2;
+}
+
+
+.blocks__link-info {
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  position: absolute;
+  left: 30px;
+  bottom: 20px;
+  max-width: 270px;
+}
+
+.block__text {
+  display: inline-block;
+  padding-top: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.25em;
+  color: #000;
+}
+
+/*end our services*/
